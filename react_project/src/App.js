@@ -1,4 +1,5 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Routes, Route, Link } from "react-router-dom";
 
@@ -14,7 +15,6 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<WelcomePage />} />
-
         <Route path="/" element={<Layout />}>
           <Route path="home" element={<Home />} />
           <Route path="reservation" element={<ReservationPage />} />

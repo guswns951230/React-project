@@ -4,7 +4,9 @@ const WelcomePage = () => {
   return (
     <div>
       <h1>Welcome page</h1>
-      <NavLink to="home">Start</NavLink>
+      <button>
+        <NavLink to="home">Start</NavLink>
+      </button>
     </div>
   );
 };
