@@ -1,10 +1,20 @@
 import { NavLink } from "react-router-dom";
+import { useState, useContext, useEffect } from "react";
 
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCut } from "@fortawesome/free-solid-svg-icons";
 
+import DataContext from "../context/DataContext";
+
 const NavbarComp = () => {
+  const [login, setLogin] = useState(false);
+  const data = useContext(DataContext);
+
+  useEffect(() => {
+    setLogin(data.state.user ? true : false);
+  });
+
   return (
     <div>
       <Navbar bg="dark" variant="dark">
@@ -16,19 +26,30 @@ const NavbarComp = () => {
             {/* <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#features">Features</Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link> */}
-            <NavLink className="nav-link" to="home">
+            <NavLink className="nav-link" to="/home">
               Home
+            </NavLink>
+            <NavLink className="nav-link" to="/contact">
+              Contact
             </NavLink>
             <NavLink className="nav-link" to="/reservation">
               예약
             </NavLink>
-            <NavLink className="nav-link" to="contact">
-              Contact
-            </NavLink>
           </Nav>
-          <NavLink className="justify-content-end" to="loginPage">
-            <Button variant="outline-light">Log In</Button>{" "}
-          </NavLink>
+          <Navbar className="justify-content-end" to="loginPage">
+            {login ? (
+              <Nav>
+                <NavLink className="nav-link" to="/mypage">
+                  {data.state.user.name}님의 My Page
+                </NavLink>
+                <Button variant="outline-light">Log Out</Button>{" "}
+              </Nav>
+            ) : (
+              <div>
+                <Button variant="outline-light">Log In</Button>{" "}
+              </div>
+            )}
+          </Navbar>
         </Container>
       </Navbar>
     </div>
