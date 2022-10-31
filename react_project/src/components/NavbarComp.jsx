@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useState, useContext, useEffect } from "react";
 
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
@@ -10,10 +10,17 @@ import DataContext from "../context/DataContext";
 const NavbarComp = () => {
   const [login, setLogin] = useState(false);
   const data = useContext(DataContext);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setLogin(data.state.user ? true : false);
-  });
+  }, []);
+
+  const logOut = () => {
+    setLogin(false);
+    data.action.setUser(null);
+    navigate("/home");
+  };
 
   return (
     <div>
@@ -42,7 +49,9 @@ const NavbarComp = () => {
                 <NavLink className="nav-link" to="/mypage">
                   {data.state.user.name}님의 My Page
                 </NavLink>
-                <Button variant="outline-light">Log Out</Button>{" "}
+                <Button variant="outline-light" onClick={logOut}>
+                  Log Out
+                </Button>{" "}
               </Nav>
             ) : (
               <div>
