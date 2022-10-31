@@ -4,7 +4,7 @@ const DataContext = createContext();
 
 const DataProvider = ({ children }) => {
   const [user, setUser] = useState({
-    name: "홍길동",
+    name: "",
     profile: null,
   });
 

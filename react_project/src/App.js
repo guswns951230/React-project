@@ -22,7 +22,7 @@ function App() {
             <Route path="home" element={<Home />} />
             <Route path="reservation" element={<ReservationPage />} />
             <Route path="contact" element={<ContactPage />} />
-            <Route path="LoginPage" element={<LoginPage />} />
+            <Route path="Login" element={<LoginPage />} />
           </Route>
         </Routes>
       </DataProvider>

@@ -14,7 +14,7 @@ const NavbarComp = () => {
 
   useEffect(() => {
     setLogin(data.state.user ? true : false);
-  }, []);
+  }, [data.state.user]);
 
   const logOut = () => {
     setLogin(false);
@@ -43,7 +43,7 @@ const NavbarComp = () => {
               예약
             </NavLink>
           </Nav>
-          <Navbar className="justify-content-end" to="loginPage">
+          <Navbar className="justify-content-end" to="login">
             {login ? (
               <Nav>
                 <NavLink className="nav-link" to="/mypage">
@@ -55,7 +55,14 @@ const NavbarComp = () => {
               </Nav>
             ) : (
               <div>
-                <Button variant="outline-light">Log In</Button>{" "}
+                <Button
+                  variant="outline-light"
+                  onClick={() => {
+                    navigate("/login");
+                  }}
+                >
+                  Log In
+                </Button>{" "}
               </div>
             )}
           </Navbar>
