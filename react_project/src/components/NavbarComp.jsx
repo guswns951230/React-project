@@ -30,9 +30,6 @@ const NavbarComp = () => {
             <FontAwesomeIcon icon={faCut} /> marcufali
           </NavLink>
           <Nav className="me-auto">
-            {/* <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link> */}
             <NavLink className="nav-link" to="/home">
               Home
             </NavLink>
@@ -43,10 +40,14 @@ const NavbarComp = () => {
               예약
             </NavLink>
           </Nav>
-          <Navbar className="justify-content-end" to="login">
+          <Navbar.Collapse className="justify-content-end">
             {login ? (
               <Nav>
-                <NavLink className="nav-link" to="/mypage">
+                <NavLink
+                  className="nav-link"
+                  style={{ color: "white" }}
+                  to="/mypage"
+                >
                   {data.state.user.name}님의 My Page
                 </NavLink>
                 <Button variant="outline-light" onClick={logOut}>
@@ -65,7 +66,7 @@ const NavbarComp = () => {
                 </Button>{" "}
               </div>
             )}
-          </Navbar>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </div>
