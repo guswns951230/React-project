@@ -34,7 +34,7 @@ const NavbarComp = () => {
               Home
             </NavLink>
             <NavLink className="nav-link" to="/contact">
-              Contact
+              정보
             </NavLink>
             <NavLink className="nav-link" to="/reservation">
               예약
