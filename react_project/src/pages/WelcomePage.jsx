@@ -1,4 +1,3 @@
-import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 import "slick-carousel/slick/slick.css";
@@ -11,6 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronRight,
   faChevronLeft,
+  faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 
 import "../css/welcomePage.css";
@@ -36,7 +36,7 @@ const WelcomePage = () => {
           <div>
             <img
               className="slick-slide welcomeImg"
-              src="/img/welcomepage1.jpg"
+              src="/img/welcomepage4.jpg"
               alt=""
             />
           </div>
@@ -64,48 +64,41 @@ const WelcomePage = () => {
           <div>
             <img
               className="slick-slide welcomeImg"
-              src="/img/welcomepage4.jpg"
+              src="/img/welcomepage1.jpg"
               alt=""
             />
           </div>
         </Slider>
       </div>
 
-      <Button
-        // variant="outline-dark"
+      <div className="textContainer">
+        <h1>marcufali</h1>
+        <p>
+          소개내용입니다
+          <br />
+          소개문구입니다 블라블라블라블라
+        </p>
+      </div>
+
+      <button
         onClick={() => {
           navigate("/home");
         }}
         className="enterBtn"
       >
-        start
-      </Button>
+        <FontAwesomeIcon icon={faPlus} />
+        &nbsp;&nbsp;&nbsp;View More
+      </button>
     </>
   );
 };
 
-function SampleNextArrow(props) {
-  const { className, onClick } = props;
-  return (
-    <FontAwesomeIcon
-      icon={faChevronRight}
-      className={className}
-      onClick={onClick}
-      style={{ color: "#0d6efd", display: "none" }}
-    />
-  );
+function SampleNextArrow() {
+  return <FontAwesomeIcon icon={faChevronRight} style={{ display: "none" }} />;
 }
 
-function SamplePrevArrow(props) {
-  const { className, onClick } = props;
-  return (
-    <FontAwesomeIcon
-      icon={faChevronLeft}
-      className={className}
-      onClick={onClick}
-      style={{ color: "#0d6efd", display: "none" }}
-    />
-  );
+function SamplePrevArrow() {
+  return <FontAwesomeIcon icon={faChevronLeft} style={{ display: "none" }} />;
 }
 
 export default WelcomePage;

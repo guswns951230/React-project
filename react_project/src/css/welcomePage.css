@@ -6,9 +6,49 @@
   filter: brightness(70%);
   opacity: 0.9;
 }
-.enterBtn {
+
+.textContainer {
+  position: absolute;
+  text-align: left;
+  top: 20%;
+  left: 5%;
+}
+.textContainer > h1 {
   color: white;
+  font-size: 5rem;
+}
+.textContainer > p {
+  color: white;
+  font-size: 2rem;
+}
+
+.enterBtn {
   position: absolute;
   top: 70%;
-  right: 30%;
+  right: 20%;
+  color: white;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 180px;
+  height: 60px;
+  transition: all 0.4s;
+  z-index: 0;
+}
+.enterBtn::after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  left: 0;
+  transition: all 0.4s;
+  background-color: red;
+}
+
+.enterBtn:hover {
+  border: 1px solid red;
+}
+.enterBtn:hover::after {
+  width: 100%;
+  z-index: -1;
 }
