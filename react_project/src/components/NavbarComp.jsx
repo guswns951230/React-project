@@ -33,7 +33,7 @@ const NavbarComp = () => {
             <NavLink className="nav-link" to="/home">
               Home
             </NavLink>
-            <NavLink className="nav-link" to="/contact">
+            <NavLink className="nav-link" to="/info">
               정보
             </NavLink>
             <NavLink className="nav-link" to="/reservation">

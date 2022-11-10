@@ -3,7 +3,8 @@ import React from "react";
 const Home = () => {
   return (
     <div>
-      <p>디자이너</p>
+      <p>Home Page</p>
+      <p>event slick</p>
     </div>
   );
 };

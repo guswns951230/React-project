@@ -74,9 +74,9 @@ const WelcomePage = () => {
       <div className="textContainer">
         <h1>marcufali</h1>
         <p>
-          소개내용입니다
+          당신이 가진 자연스러운 아름다움
           <br />
-          소개문구입니다 블라블라블라블라
+          간단한 소개글입니다
         </p>
       </div>
 
