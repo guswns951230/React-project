@@ -21,7 +21,7 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  speed: 1000,
+  speed: 800,
   autoplaySpeed: 3000,
   nextArrow: <SampleNextArrow />,
   prevArrow: <SamplePrevArrow />,
@@ -66,7 +66,8 @@ const WelcomePage = () => {
       <div className="textContainer">
         <h1>marcufali</h1>
         <p>
-          당신이 가진 자연스러운 아름다움
+          매장 슬로건입니다
+          {/* 당신이 가진 자연스러운 아름다움 */}
           <br />
           간단한 소개글입니다
         </p>

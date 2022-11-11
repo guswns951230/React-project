@@ -2,9 +2,9 @@ import "../css/designer.css";
 
 const Designer = () => {
   return (
-    <div>
+    <div className="designer-container">
       <h1>Designer</h1>
-      <div className="designer-form">
+      <div className="designer-form director-form">
         <img
           className="designer-img director"
           src="/img/profileimg.png"
@@ -27,9 +27,9 @@ const Designer = () => {
         </div>
       </div>
 
-      <div className="designer-form">
+      <div className="designer-form manager-form">
         <div className="designer-text">
-          <h3>Jung</h3>
+          <h3>Min</h3>
           <p>manager / designer</p>
 
           <p>

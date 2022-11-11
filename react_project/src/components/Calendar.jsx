@@ -35,7 +35,7 @@ const Calendar = () => {
   };
 
   return (
-    <div>
+    <div className="calendar-container">
       <FullCalendar
         plugins={[dayGridPlugin, googleCalendarPlugin, interactionPlugin]}
         initialView="dayGridMonth"

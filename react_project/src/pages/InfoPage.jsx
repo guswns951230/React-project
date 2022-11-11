@@ -1,10 +1,11 @@
-import InfoForm from "../components/InfoForm";
+import Contact from "../components/Contact";
+import Designer from "../components/Designer";
 
 const InfoPage = () => {
   return (
     <div>
-      <h1>Contact page</h1>
-      <InfoForm />
+      <Contact />
+      <Designer />
     </div>
   );
 };

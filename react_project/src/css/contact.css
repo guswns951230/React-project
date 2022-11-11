@@ -1,0 +1,60 @@
+.price-container {
+  background-color: #eee9dc;
+  padding: 20px;
+}
+.price-text {
+  margin: 0;
+}
+
+.info-title {
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+.contact-container {
+  padding: 20px;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: auto;
+  background-color: white;
+}
+
+.contact-box {
+  width: 190px;
+}
+
+.icon-box {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  margin: auto;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.kakao-box:hover {
+  background-color: #f9e000;
+}
+.call-box:hover {
+  background-color: #01be76;
+}
+
+.icon {
+  position: absolute;
+  font-size: 40px;
+  color: #333333;
+  top: 20px;
+  right: 20px;
+}
+
+.contact-text {
+  border-top: 3px solid black;
+  margin-top: 15px;
+  padding-top: 15px;
+}

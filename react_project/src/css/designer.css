@@ -1,7 +1,11 @@
+.designer-container {
+  background-color: beige;
+  padding: 20px;
+}
 .designer-form {
   display: flex;
   justify-content: center;
-  margin: 30px;
+  margin: 20px 0 20px 0;
 }
 
 .designer-img {
@@ -9,10 +13,10 @@
   height: 350px;
 }
 .director {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 .manager {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 .designer-text {
   position: relative;

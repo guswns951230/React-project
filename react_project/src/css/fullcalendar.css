@@ -1,3 +1,9 @@
+.calendar-container {
+  padding: 30px;
+  width: 80%;
+  margin: auto;
+}
+
 .fc-day a {
   color: black;
   text-decoration: none;
