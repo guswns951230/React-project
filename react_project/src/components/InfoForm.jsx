@@ -1,3 +1,5 @@
+import Designer from "./Designer";
+
 const InfoForm = () => {
   return (
     <div>
@@ -43,6 +45,8 @@ const InfoForm = () => {
           </div>
         </div>
       </div>
+
+      <Designer />
     </div>
   );
 };

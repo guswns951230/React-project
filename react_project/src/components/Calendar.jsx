@@ -1,10 +1,10 @@
+import { useContext } from "react";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import googleCalendarPlugin from "@fullcalendar/google-calendar";
 import interactionPlugin from "@fullcalendar/interaction";
 
 import DataContext from "../context/DataContext";
-import { useContext } from "react";
 
 import "../css/fullcalendar.css";
 
@@ -12,19 +12,25 @@ const Calendar = () => {
   const { state } = useContext(DataContext);
 
   const handleDateClick = (arg) => {
-    console.log(arg.date);
-    arg.backgroundColor = "#f29";
+    console.log(arg.dateStr);
+    console.log(arg);
   };
 
   let reservationTime = "";
   const reservation = (e) => {
     e.preventDefault();
+
     const time = document.getElementsByName("time");
-    time.forEach((node) => {
-      if (node.checked) {
-        reservationTime = node.value;
-      }
-    });
+    if (state.user != "") {
+      time.forEach((node) => {
+        if (node.checked) {
+          reservationTime = node.value;
+        }
+      });
+    } else {
+      alert("예약을 위해 로그인이 필요합니다.");
+      return;
+    }
     console.log(reservationTime);
   };
 

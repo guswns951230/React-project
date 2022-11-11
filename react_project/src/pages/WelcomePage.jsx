@@ -31,45 +31,37 @@ const WelcomePage = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div>
-        <Slider {...settings}>
-          <div>
-            <img
-              className="slick-slide welcomeImg"
-              src="/img/welcomepage4.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="slick-slide welcomeImg"
-              src="/img/welcomepage2.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="slick-slide welcomeImg"
-              src="/img/welcomepage5.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="slick-slide welcomeImg"
-              src="/img/welcomepage3.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="slick-slide welcomeImg"
-              src="/img/welcomepage1.jpg"
-              alt=""
-            />
-          </div>
-        </Slider>
-      </div>
+      <Slider {...settings}>
+        <img
+          className="slick-slide welcomeImg"
+          src="/img/welcomepage4.jpg"
+          alt=""
+        />
+
+        <img
+          className="slick-slide welcomeImg"
+          src="/img/welcomepage2.jpg"
+          alt=""
+        />
+
+        <img
+          className="slick-slide welcomeImg"
+          src="/img/welcomepage5.jpg"
+          alt=""
+        />
+
+        <img
+          className="slick-slide welcomeImg"
+          src="/img/welcomepage3.jpg"
+          alt=""
+        />
+
+        <img
+          className="slick-slide welcomeImg"
+          src="/img/welcomepage1.jpg"
+          alt=""
+        />
+      </Slider>
 
       <div className="textContainer">
         <h1>marcufali</h1>
