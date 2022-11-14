@@ -65,11 +65,11 @@ const WelcomePage = () => {
 
       <div className="textContainer">
         <h1>marcufali</h1>
+        <br />
         <p>
-          매장 슬로건입니다
-          {/* 당신이 가진 자연스러운 아름다움 */}
+          『 당신이 가진 자연스러운 아름다움 』
           <br />
-          간단한 소개글입니다
+          Premium hair solution <strong>marcufali</strong>
         </p>
       </div>
 

@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCut } from "@fortawesome/free-solid-svg-icons";
 
 import DataContext from "../context/DataContext";
+import "../css/NavbarComp.css";
 
 const NavbarComp = () => {
   const [login, setLogin] = useState(false);
@@ -24,7 +25,7 @@ const NavbarComp = () => {
 
   return (
     <div>
-      <Navbar bg="dark" variant="dark">
+      <Navbar className="navbar" bg="dark" variant="dark">
         <Container>
           <NavLink className="navbar-brand" to="/">
             <FontAwesomeIcon icon={faCut} /> marcufali

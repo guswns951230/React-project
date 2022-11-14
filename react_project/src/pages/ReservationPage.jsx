@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import ReservationForm from "../components/ReservationForm";
 
 const ReservationPage = () => {
@@ -5,6 +6,7 @@ const ReservationPage = () => {
     <div>
       <h1>Reservation page</h1>
       <ReservationForm />
+      <Footer />
     </div>
   );
 };

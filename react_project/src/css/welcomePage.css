@@ -16,6 +16,7 @@
 .textContainer > h1 {
   color: white;
   font-size: 5rem;
+  font-weight: bolder;
 }
 .textContainer > p {
   color: white;

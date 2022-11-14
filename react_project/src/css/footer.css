@@ -1,4 +1,19 @@
 footer {
+  text-align: left;
   background-color: #202529;
   color: whitesmoke;
+  padding: 10px 20px;
+}
+footer a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+footer a:visited {
+  color: whitesmoke;
+}
+
+footer p {
+  margin-top: 30px;
+  margin-bottom: 0;
 }
