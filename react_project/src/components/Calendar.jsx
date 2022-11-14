@@ -21,15 +21,14 @@ const Calendar = () => {
     e.preventDefault();
 
     const time = document.getElementsByName("time");
-    if (state.user != "") {
+    if (state.user == "" || state.user == null) {
+      alert("예약을 위해 로그인이 필요합니다.");
+    } else {
       time.forEach((node) => {
         if (node.checked) {
           reservationTime = node.value;
         }
       });
-    } else {
-      alert("예약을 위해 로그인이 필요합니다.");
-      return;
     }
     console.log(reservationTime);
   };
