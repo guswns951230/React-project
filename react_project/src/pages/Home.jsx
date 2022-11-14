@@ -1,11 +1,10 @@
-import React from "react";
 import Footer from "../components/Footer";
+import HomeComp from "../components/HomeComp";
 
 const Home = () => {
   return (
     <div>
-      <p>Home Page</p>
-      <p>event slick</p>
+      <HomeComp />
       <Footer />
     </div>
   );
