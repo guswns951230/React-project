@@ -7,7 +7,7 @@ const Designer = () => {
       <div className="designer-form director-form">
         <img
           className="designer-img director"
-          src="/img/profileimg.png"
+          src="https://guswns951230.github.io/React-project/img/profileimg.png"
           alt="designer jung image"
         />
         <div className="designer-text">
@@ -46,7 +46,7 @@ const Designer = () => {
 
         <img
           className="designer-img manager"
-          src="/img/profileimg.png"
+          src="https://guswns951230.github.io/React-project/img/profileimg.png"
           alt="designer jung image"
         />
       </div>

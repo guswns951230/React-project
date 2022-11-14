@@ -34,31 +34,31 @@ const WelcomePage = () => {
       <Slider {...settings}>
         <img
           className="slick-slide welcomeImg"
-          src="/img/welcomepage4.jpg"
+          src="https://guswns951230.github.io/React-project/img/welcomepage4.jpg"
           alt=""
         />
 
         <img
           className="slick-slide welcomeImg"
-          src="/img/welcomepage2.jpg"
+          src="https://guswns951230.github.io/React-project/img/welcomepage2.jpg"
           alt=""
         />
 
         <img
           className="slick-slide welcomeImg"
-          src="/img/welcomepage5.jpg"
+          src="https://guswns951230.github.io/React-project/img/welcomepage5.jpg"
           alt=""
         />
 
         <img
           className="slick-slide welcomeImg"
-          src="/img/welcomepage3.jpg"
+          src="https://guswns951230.github.io/React-project/img/welcomepage3.jpg"
           alt=""
         />
 
         <img
           className="slick-slide welcomeImg"
-          src="/img/welcomepage1.jpg"
+          src="https://guswns951230.github.io/React-project/img/welcomepage1.jpg"
           alt=""
         />
       </Slider>

@@ -12,7 +12,7 @@ const HomeComp = () => {
       <div className="home-section1">
         <img
           className="home-section1-img"
-          src="/img/homepage1.jpg"
+          src="https://guswns951230.github.io/React-project/img/homepage1.jpg"
           alt="home-image-1"
         />
         <h1>『 그 대 만 을 &nbsp;위 한 』</h1>
@@ -36,7 +36,7 @@ const HomeComp = () => {
         </p>
         <img
           className="home-section2-img"
-          src="/img/homepage2.jpg"
+          src="https://guswns951230.github.io/React-project/img/homepage2.jpg"
           alt="home-image-2"
         />
       </div>
@@ -44,7 +44,7 @@ const HomeComp = () => {
       <div className="home-section-event">
         <img
           className="home-section-event-img"
-          src="/img/homepage3.jpg"
+          src="https://guswns951230.github.io/React-project/img/homepage3.jpg"
           alt="home-image-3"
         />
         <div className="home-section-event-box">
