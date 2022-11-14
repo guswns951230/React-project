@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.048b4b92.css",
-    "main.js": "/static/js/main.b9e73ba6.js",
-    "static/js/787.a2bf511c.chunk.js": "/static/js/787.a2bf511c.chunk.js",
-    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/index.html",
-    "main.048b4b92.css.map": "/static/css/main.048b4b92.css.map",
-    "main.b9e73ba6.js.map": "/static/js/main.b9e73ba6.js.map",
-    "787.a2bf511c.chunk.js.map": "/static/js/787.a2bf511c.chunk.js.map"
+    "main.css": "/React-project/static/css/main.ccbe4c64.css",
+    "main.js": "/React-project/static/js/main.6bbbc5c5.js",
+    "static/js/787.a2bf511c.chunk.js": "/React-project/static/js/787.a2bf511c.chunk.js",
+    "static/media/slick.svg": "/React-project/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/React-project/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/React-project/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/React-project/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/React-project/index.html",
+    "main.ccbe4c64.css.map": "/React-project/static/css/main.ccbe4c64.css.map",
+    "main.6bbbc5c5.js.map": "/React-project/static/js/main.6bbbc5c5.js.map",
+    "787.a2bf511c.chunk.js.map": "/React-project/static/js/787.a2bf511c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.048b4b92.css",
-    "static/js/main.b9e73ba6.js"
+    "static/css/main.ccbe4c64.css",
+    "static/js/main.6bbbc5c5.js"
   ]
 }
