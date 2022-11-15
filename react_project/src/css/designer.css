@@ -1,6 +1,11 @@
+.designer-title {
+  font-size: 2rem;
+  font-weight: bolder;
+}
 .designer-container {
   background-color: beige;
   padding: 20px;
+  margin: auto;
 }
 .designer-form {
   display: flex;
@@ -21,7 +26,7 @@
 .designer-text {
   position: relative;
   text-align: left;
-  width: 600px;
+  width: 40%;
 }
 
 .designer-text::before {

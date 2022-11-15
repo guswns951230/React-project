@@ -3,7 +3,7 @@ import "../css/designer.css";
 const Designer = () => {
   return (
     <div className="designer-container">
-      <h1>Designer</h1>
+      <p className="designer-title">Designer</p>
       <div className="designer-form director-form">
         <img
           className="designer-img director"

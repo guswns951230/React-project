@@ -1,0 +1,28 @@
+.location-container {
+  width: 80%;
+  padding: 80px 20px 20px 20px;
+  margin: auto;
+}
+.location-title {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.map-container {
+  display: flex;
+  justify-content: space-around;
+}
+#map {
+  width: 50%;
+  height: auto;
+  align-items: center;
+}
+
+.center-info-box {
+  width: 40%;
+  text-align: left;
+  margin: 20px;
+}
+.center-info-label {
+  margin-bottom: 0;
+}
