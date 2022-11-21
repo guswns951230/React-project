@@ -30,7 +30,7 @@ const HomeComp = () => {
 
       <div className="home-section2">
         <p>
-          <span className="home-section2-title">『 PROFESSIONAL 』</span>
+          <span className="home-section2-title">『 전 문 적 인 』</span>
           <br />
           <span className="home-section2-text">디자이너 홍보 문구</span>
         </p>
@@ -48,9 +48,9 @@ const HomeComp = () => {
           alt="home-image-3"
         />
         <div className="home-section-event-box">
-          <p className="home-section-event-title">『 EVENT 』</p>
+          <p className="home-section-event-title">『 프 로 모 션 』</p>
           <p className="home-section-event-text">
-            진행중인 Event를 확인하고 혜택을 누리세요!
+            진행중인 프로모션을 확인하고 혜택을 누리세요!
           </p>
           <button
             onClick={() => {
