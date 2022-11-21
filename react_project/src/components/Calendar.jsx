@@ -45,6 +45,8 @@ const Calendar = () => {
         eventColor={"#F2921D"}
         height={"660px"}
         dateClick={handleDateClick}
+        unselectAuto={true}
+        selectable={true}
         // Toolbar
       />
       <form onSubmit={reservation}>
