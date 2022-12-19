@@ -1,29 +1,20 @@
-// import { useState, useContext } from "react";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
-// import DataContext from "../context/DataContext";
-
-const LoginForm = () => {
+const SignupForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // const { action } = useContext(DataContext);
+
   const navigate = useNavigate();
 
-  // const loginUser = () => {
-  //   action.setUser({ name: name, profile: null });
-  //   navigate("/home");
-  // };
-
-  const emailLogin = (e) => {
-    e.preventDefault();
+  const emailCraete = () => {
     const auth = getAuth();
-    signInWithEmailAndPassword(auth, email, password)
+    createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
@@ -34,18 +25,21 @@ const LoginForm = () => {
         const errorCode = error.code;
         const errorMessage = error.message;
         console.error(errorCode, errorMessage);
-        if (errorCode === "auth/wrong-password") {
-          alert("잘못된 password입니다.");
-        } else if (errorCode === "auth/user-not-found") {
-          alert("존재하지 않는 사용자입니다.");
+        if (errorCode === "auth/email-already-in-use") {
+          alert("이미 사용중인 E-mail입니다.");
+        } else if (password.length < 6) {
+          alert("password는 6자리 이상 설정하세요.");
         }
       });
   };
 
   return (
     <div>
-      <h1>Log in</h1>
-      <Form className="m-5" onSubmit={emailLogin}>
+      <h1>Sign Up</h1>
+      <Form
+        className="m-5"
+        // onSubmit={loginUser}
+      >
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>E-mail</Form.Label>
           <Form.Control
@@ -68,12 +62,13 @@ const LoginForm = () => {
           />
         </Form.Group>
 
-        <Button variant="primary" type="submit">
+        {/* <Button variant="primary" type="submit">
           Login
-        </Button>
+        </Button> */}
       </Form>
+      <Button onClick={emailCraete}>Sign Up</Button>
     </div>
   );
 };
 
-export default LoginForm;
+export default SignupForm;
