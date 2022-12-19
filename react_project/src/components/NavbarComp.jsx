@@ -23,6 +23,12 @@ const NavbarComp = () => {
     navigate("/home");
   };
 
+  // 현재 페이지 url 가져오기
+  const getCurrentURL = () => {
+    return window.location.href;
+  };
+  const url = getCurrentURL();
+
   return (
     <div>
       <Navbar className="navbar" bg="dark" variant="dark">
@@ -42,31 +48,54 @@ const NavbarComp = () => {
             </NavLink>
           </Nav>
           <Navbar.Collapse className="justify-content-end">
-            {login ? (
-              <Nav>
-                <NavLink
-                  className="nav-link"
-                  style={{ color: "white" }}
-                  to="/mypage"
-                >
-                  {data.state.user.name}님의 My Page
-                </NavLink>
-                <Button variant="outline-light" onClick={logOut}>
-                  Log Out
-                </Button>{" "}
-              </Nav>
-            ) : (
-              <div>
-                <Button
-                  variant="outline-light"
-                  onClick={() => {
-                    navigate("/login");
-                  }}
-                >
-                  Log In
-                </Button>{" "}
-              </div>
-            )}
+            {
+              login ? (
+                <Nav>
+                  <NavLink
+                    className="nav-link"
+                    style={{ color: "white" }}
+                    to="/mypage"
+                  >
+                    {data.state.user.name}님의 My Page
+                  </NavLink>
+                  <Button variant="outline-light" onClick={logOut}>
+                    Log Out
+                  </Button>{" "}
+                </Nav>
+              ) : url === "http://localhost:3000/React-project/login" ? (
+                <div>
+                  <Button
+                    variant="outline-light"
+                    onClick={() => {
+                      navigate("/signup");
+                    }}
+                  >
+                    Sign Up
+                  </Button>
+                </div>
+              ) : (
+                <div>
+                  <Button
+                    variant="outline-light"
+                    onClick={() => {
+                      navigate("/login");
+                    }}
+                  >
+                    Log In
+                  </Button>{" "}
+                </div>
+              )
+              // <div>
+              //   <Button
+              //     variant="outline-light"
+              //     onClick={() => {
+              //       navigate("/login");
+              //     }}
+              //   >
+              //     Log In
+              //   </Button>{" "}
+              // </div>
+            }
           </Navbar.Collapse>
         </Container>
       </Navbar>

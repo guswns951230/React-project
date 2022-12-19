@@ -12,6 +12,7 @@ import WelcomePage from "./pages/WelcomePage";
 import EventPage from "./pages/EventPage";
 // 공용으로 사용할 datacontext provider
 import { DataProvider } from "./context/DataContext";
+import SignupPage from "./pages/SignupPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="info" element={<InfoPage />} />
             <Route path="Login" element={<LoginPage />} />
             <Route path="event" element={<EventPage />} />
+            <Route path="signup" element={<SignupPage />} />
           </Route>
         </Routes>
       </DataProvider>
